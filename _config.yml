@@ -1,0 +1,9 @@
+root: /
+source: source
+destination: public
+plugins: plugins
+
+markdown: kramdown
+titlecase: true
+
+
