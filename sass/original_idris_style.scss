@@ -1,0 +1,110 @@
+body {
+	background-image: url(/images/bgr.png);
+}
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	font-size: 12px;
+}
+
+/*-========== */
+
+body {
+	background-color: #790000;
+	/*background-image: url(/images/tekstbgr.jpg);
+	background-position: topleft;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-left: 5px;*/
+
+scrollbar-face-color: #B11B02;
+scrollbar-highlight-color: #c32208;
+scrollbar-3dlight-color: #950304;
+scrollbar-darkshadow-color: #950304;
+scrollbar-shadow-color: #c32208;
+scrollbar-arrow-color: #ffffff;
+scrollbar-track-color: #A50603;
+}
+
+html,body {overflow-x:hidden;}
+body,td,th {
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a.one:link {
+	text-decoration: underline;
+	color: #FFFFFF;
+	line-height: 21px;
+	font-size: 12px;
+}
+a.one:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+	line-height: 21px;
+	font-size: 12px;
+}
+a.one:hover {
+	text-decoration: none;
+	color: #99FF00;
+	line-height: 21px;
+	font-size: 12px;
+}
+a.one:active {
+	text-decoration: none;
+	color: #FFFFFF;
+	line-height: 21px;
+	font-size: 12px;
+}
+
+H1 {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #FFFFFF;
+	font-weight: normal;
+	line-height: 18px;
+	}
+
+H2 {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #FFFFFF;
+	text-indent: 0pt;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	}
+
+H3 {
+	font-family: Verdana;
+	font-size: 10.5pt;
+	color: #FFFFFF;
+	text-indent: 0pt;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 21px;
+	}
+
+
+/*-- CUT -- */
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover {
+	color: #0C0;
+	text-decoration: none;
+}
+a:active {
+	color: #FFF;
+	text-decoration: none;
+}
+
+html {
+    overflow: scroll;
+} 

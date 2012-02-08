@@ -1,0 +1,209 @@
+html {
+    overflow-y: scroll;
+    
+}
+html, body {overflow-x: hidden;} 
+
+body.idris {
+    idris {
+        color: $idris-green;
+        font-weight: bold;
+        //font-size: 120%;
+    }
+
+    background: {
+        image: url(/images/bgr.png);
+        color:  $idris-body-bg;
+        repeat: repeat-x;
+    }
+    font: {
+        family: Verdana, Geneva, sans-serif;
+        size: 12px;
+    }
+    line-height: 1.88889;
+    color: $idris-text;
+    //text-align: justify;
+
+    h1 {
+        color: $idris-text;
+        font-size: 24px;
+    }
+
+    h2 {
+        color: $idris-text;
+        font-size: 20px;
+    }
+
+    a, a.text {
+	color: $idris-text;
+        text-decoration: none;
+    }
+    a.text:link {
+        text-decoration: underline;
+    }
+    a.text:visited {
+        color: $idris-text;
+        text-decoration: underline;
+    }
+    a.text:hover {
+	color: $idris-green;
+    }
+
+    // Default layout items. Each page is organized as following:
+    //
+    // #container
+    //   #banner
+    //   #menu
+    //   #pane
+    //     #content
+    //   #footer
+    //
+    #container {
+        @include container;
+    }
+
+    #banner, #menu, #footer, #pane {
+        @include column($blueprint-grid-columns);
+        @include prepend-top(0.5em);
+        @include append-bottom(0.5em);
+    }
+
+    #menu {
+        ul {
+            background-color: $idris-menu-bg;
+
+            list-style: none;
+            margin: 0;
+        }
+        li {
+            display: inline;
+        }
+        a {
+            color: $idris-menu;
+            text-decoration:none;
+            padding: 0px 10px 0 10px;
+        }
+        a:hover   { color: #00CC00; }
+        a:active  { color: #00CC00; }
+    }
+
+    #footer {
+        color: $idris-footer;
+        background-color: $idris-footer-bg;
+        margin-bottom: 2em;
+        span {
+            float: right;
+        }
+    }
+
+    #pane {
+        background: {
+            image: url(/images/txtbgr.png);
+            attachment: scroll;
+        }
+    }
+    
+    #content {
+        $margin: 4;
+        @include prepend($margin);
+        @include column($blueprint-grid-columns - 2*$margin);
+        margin: {
+            top: 1em;
+            bottom: 1em;
+        }
+    }
+
+//-------------------------------------------------------------
+
+    #home {
+        .section {
+            clear: left;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    
+
+    #band {
+        #bottom {
+            clear: both;
+        }
+        .thumb {
+            float: left;
+            margin: 0;
+        }
+        
+        .record { 
+            .name, .what {
+                display: inline;
+                float: left;
+                width: 50%;
+            }
+        } 
+    }
+
+    #muziek {
+        .album {
+            @include append-bottom(40px);
+            clear: left;
+            .cover {
+                float: left;
+                width: 50%;
+                display: inline;
+                .title {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    #fotos {
+        .thumb {
+            float: left;
+            margin: 6px;
+        }
+    }
+
+    #videos {
+        width: 50%;
+        margin: auto;
+        div.section {
+            margin-bottom: 20px;
+        }
+    }
+    
+    #agenda {
+        table {
+            margin-bottom: 3em;
+        }
+    }
+  
+    #contact, #agenda-old, #pers {
+        ul {
+            li {
+                display: block;
+            }
+            margin-bottom: 2em;
+        }
+    }
+
+    #pers {
+        div.section {
+            clear: left;
+        }
+     
+        div.package {
+            margin-right: 30px;
+            margin-bottom: 20px;
+        }
+        
+        img {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    }
+
+}
+    
+

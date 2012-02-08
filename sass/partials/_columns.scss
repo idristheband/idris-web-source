@@ -1,0 +1,31 @@
+.two-columns {
+    clear: left;
+    .left {
+        width: 45%;
+        float: left;
+        margin-right: 5%;
+    }
+    .right {
+        width: 45%;
+        float: left;
+    }
+}
+
+.three-columns {
+    clear: left;
+    .left {
+        width: 20%;
+        float: left;
+        margin-right: 5%;
+    }
+    .mid {
+        width: 20%;
+        float: left;
+        margin-right: 5%;
+    }
+    .right {
+        width: 30%;
+        float: left;
+    }
+}
+
