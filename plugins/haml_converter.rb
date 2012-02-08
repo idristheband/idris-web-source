@@ -13,8 +13,8 @@ module Jekyll
     end
 
     def convert(content)
-      puts ">>>>>>>>>>>>>>>"
-      puts content[0..200]
+      #puts ">>>>>>>>>>>>>>>"
+      #puts content[0..200]
       engine = Haml::Engine.new(content)
       engine.render
     end
