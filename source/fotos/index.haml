@@ -1,0 +1,16 @@
+---
+layout: default
+banner: fotos
+---
+
+
+#fotos
+
+  %h1 Foto's
+  
+  - (0..16).each do |i|
+    .thumb
+      %a{:href=>"images/foto (#{i}).jpg",
+         :rel=>"lightbox[roadtrip]",
+         :title=>"Idris"}
+        %img{:src=>"thumbs/th_foto-(#{i}).jpg"}

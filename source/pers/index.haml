@@ -1,0 +1,121 @@
+---
+layout: default
+banner: pers
+---
+
+:ruby
+  def pers_foto(name)
+    %(
+      <div class='thumb'>
+         <a href="#{name}.jpg" target='_blank'>
+            <img src="#{name}_not_for_publishing.jpg",
+            alt="Klik voor hoge resolutie"
+            onmouseover="this.src='#{name}_not_for_publishing_txt.jpg';"
+            onmouseout="this.src='#{name}_not_for_publishing.jpg';"/></a></div>
+      <div><strong>Klik op de foto voor een hogere resolutie</strong></div>)
+  end
+
+#pers
+
+  #fotos.section
+    %h1 Persfoto's
+
+    .two-columns
+      .left
+        .package
+          = pers_foto('fotos/idris_1500x1026')
+          %div Foto: Michiel Bos
+          %div 1500 x 1026 pixels, 170KB
+
+        .package
+          = pers_foto('fotos/is_0852_2000x1550')
+          %div Foto: Hans van Diemen
+          %div 2000 x 1550 pixels, 1400KB
+
+        .package
+          = pers_foto('fotos/is_8055_2000x1330')
+          %div Foto: Hans van Diemen 
+          %div 2000 x 1330 pixels, 1,4 MB
+
+        .package
+          = pers_foto('fotos/is_8011_2000x1500')
+          %div Foto: Hans van Diemen 
+          %div 2000 x 1500 pixels, 1,4 MB
+      .right
+        .package
+          = pers_foto('fotos/is_0866_2000x1400')
+          %div Foto: Hans van Diemen 
+          %div 2000 x 1400 pixels, 1,4 MB
+
+        .package
+          = pers_foto('fotos/is_dames_2048x1362')
+          %div Foto: Ronald Rietman 
+          %div 2048 x 1362 pixels, 884kB
+
+        .package
+          = pers_foto('fotos/is_podium')
+          %div Foto: Hans van Diemen 
+          %div 1750 x 1175 pixels, 915kB
+
+  #covers.section
+    %h1 CD Covers
+    .two-columns
+      .left
+        .package
+          = pers_foto('covers/cd_unforgotten')
+          %div "Unforgotten"
+          %div 955 x 947 pixels, 300kB
+      .right
+        .package
+          = pers_foto('covers/idris_cd')
+          %div (unnamed)
+          %div 1781 x 1515 pixels, 640kB
+
+  #biografie.section
+    
+    %h1 Biografie
+    .package
+      %div.thumb
+        %a{:href=>'bio/bio2010.pdf', :target=>'_blank'}
+          %img{:src=>'bio/bio2010.jpg'}
+      %div
+        %a{:href=>'bio/bio2010.pdf', :target=>'_blank'}
+          %img{:src=>'bio/pdf_logo.gif'}
+        %a{:href=>'bio/bio2010w.pdf', :target=>'_blank'}
+          %img{:src=>'bio/pdf_logo.gif'}
+        %a{:href=>'bio/bio2010w.doc', :target=>'_blank'} 
+          %img{:src=>'bio/word_logo.gif'}
+
+
+  #posters.section
+    %h1 Posters
+    .two-columns
+      .left
+        .package
+          %div.thumb
+            %a{:href=>'posters/idris_cmyk_a2_3mm_v2_fill_in.pdf', :target=>'_blank'}
+              %img{:src=>'posters/idris_poster.jpg'}
+          %div
+            %strong Poster A2 CYMK (PDF 5MB) met optionele invulvelden        
+          %div
+            Let op, gebruik Acrobat Reader voor de invulvelden; werkt mogelijk niet in Chrome
+      .right
+        .package
+          %div.thumb
+            %a{:href=>'posters/idris_cmyk_a2_3mm_v2_fill_in_witte_letters.pdf', :target=>'_blank'}
+              %img{:src=>'posters/idris_poster_witte_letters.jpg'}
+          %div 
+            %strong Poster A2 (PDF 6MB) met witte tekst invulvelden
+          %div 
+            Let op, gebruik Acrobat Reader voor de invulvelden; werkt mogelijk niet in Chrome
+
+  #legal.section
+    %hr
+    Foto's zijn vrij te gebruiken voor persberichten bij vermelding fotograaf en website.
+        
+    
+    
+    
+     
+    
+
