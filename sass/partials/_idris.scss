@@ -5,10 +5,9 @@ html {
 html, body {overflow-x: hidden;} 
 
 body.idris {
-    idris {
+    span.idris {
         color: $idris-green;
         font-weight: bold;
-        //font-size: 120%;
     }
 
     background: {
@@ -16,13 +15,14 @@ body.idris {
         color:  $idris-body-bg;
         repeat: repeat-x;
     }
+
     font: {
         family: Verdana, Geneva, sans-serif;
         size: 12px;
     }
+
     line-height: 1.88889;
     color: $idris-text;
-    //text-align: justify;
 
     h1 {
         color: $idris-text;
@@ -104,7 +104,7 @@ body.idris {
     }
     
     #content {
-        $margin: 4;
+        $margin: 2;
         @include prepend($margin);
         @include column($blueprint-grid-columns - 2*$margin);
         margin: {
@@ -126,21 +126,16 @@ body.idris {
     
 
     #band {
-        #bottom {
-            clear: both;
+        .section {
+            clear : both;
         }
         .thumb {
             float: left;
             margin: 0;
         }
-        
-        .record { 
-            .name, .what {
-                display: inline;
-                float: left;
-                width: 50%;
-            }
-        } 
+        #persons {
+            width: 80%;
+        }
     }
 
     #muziek {
@@ -189,6 +184,8 @@ body.idris {
     }
 
     #pers {
+        width: 90%;
+        margin-left: auto;
         div.section {
             clear: left;
         }

@@ -1,15 +1,47 @@
 <html xmlns='http://www.w3.org/1999/xhtml'>
-  {% include head.html %}
+  <head>
+    <title>IDRIS</title>
+    <link href='/images/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link rel="stylesheet" href="/css/sc-player-minimal.css" type="text/css" />
+    <link href='/css/screen.css' media='screen, projection' rel='stylesheet' type='text/css' />
+    <link href='/css/print.css' media='print' rel='stylesheet' type='text/css' />
+    <link href='/css/lightbox.css' media='screen' rel='stylesheet' type='text/css' />
+    <!--[if IE]>
+        <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script type="text/javascript" src="/js/prototype.js"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <meta http-equiv="refresh" content="1500">
+  </head>
   <body class='bp idris'>
-    <div id='container'>
-      {% include banner.html %}
-      {% include menu.html %}
+    <div id='container' class='container'>
+      <div id='banner'>
+        <img src='/images/banners/{{ page.banner }}.jpg' border="0"/>
+      </div>
+      <div id='menu'>
+        <ul>
+          <li><a href='/index.html'>Home</a></li>
+          <li><a href='/band'>Band</a></li>
+          <li><a href='/muziek'>Muziek</a></li>
+          <li><a href='/fotos'>Foto's</a></li>
+          <li><a href='/videos'>Video's</a></li>
+          <li><a href='/agenda'>Agenda</a></li>
+          <li><a href='/gastenboek'>Gastenboek</a></li>
+          <li><a href='/contact'>Contact</a></li>
+          <li><a href='/pers'>Pers</a></li>
+        </ul>
+      </div>
       <div id='pane'>
         <div id='content'>
           {{ content }}
         </div>
       </div>
-      {% include footer.html %}
+      <div id='footer'>
+        <span>
+          Designed by Michiel Bos / Tweaked by Endymion Kasanardjo.
+        </span>
+      </div>
     </div>
   </body>
 </html>

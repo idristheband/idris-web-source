@@ -50,12 +50,10 @@ task :clean do
   Dir["#{site}/*"].each { |f| rm_rf(f) }
 end
 
-# desc "Deploy to localhost"
-# task :deploy_local do
-#   puts ">>> Deploying to local apache <<<"
-#   Dir["#{site}/*"].each do |f|
-#     cp_r f, '/home/endymion/www/html'
-#   end
-
-# #, '/home/endymion/www/html'
-# end
+desc "Deploy to localhost"
+task :deploy_local do
+  puts ">>> Deploying to local apache <<<"
+  Dir["#{site}/*"].each do |f|
+    cp_r f, '/home/endymion/www/idris'
+  end
+end
