@@ -1,2 +1,4 @@
 /public/
 /.sass-cache
+/source/_libs
+*.mp3

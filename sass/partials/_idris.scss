@@ -139,15 +139,36 @@ body.idris {
     }
 
     #muziek {
+        width: 80%;
+        margin-left:auto;
+        margin-rigth: auto;
         .album {
-            @include append-bottom(40px);
-            clear: left;
+            @include append-bottom(80px);
+            clear: both;
+            .title {
+                font-size: 20px;
+            }
             .cover {
                 float: left;
                 width: 50%;
                 display: inline;
-                .title {
-                    font-size: 20px;
+            }
+            .tracks {
+                float: right;
+            }
+            ul {
+                list-style-type: none;
+            }
+            div.bestel {
+                background-color: $idris-footer-bg;
+                margin-top: 10px;
+                margin-right: 200px;
+                text-align: center;
+                a {
+                    color: $idris-text;
+                }
+                a:hover {
+                    color: $idris-green;
                 }
             }
         }
