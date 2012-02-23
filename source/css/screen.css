@@ -678,62 +678,91 @@ body.idris #band .thumb {
 body.idris #band #persons {
   width: 80%;
 }
-/* line 142, ../../sass/partials/_idris.scss */
-body.idris #muziek .album {
-  margin-bottom: 40px;
-  clear: left;
+/* line 141, ../../sass/partials/_idris.scss */
+body.idris #muziek {
+  width: 80%;
+  margin-left: auto;
+  margin-rigth: auto;
 }
 /* line 145, ../../sass/partials/_idris.scss */
+body.idris #muziek .album {
+  margin-bottom: 80px;
+  clear: both;
+}
+/* line 148, ../../sass/partials/_idris.scss */
+body.idris #muziek .album .title {
+  font-size: 20px;
+}
+/* line 151, ../../sass/partials/_idris.scss */
 body.idris #muziek .album .cover {
   float: left;
   width: 50%;
   display: inline;
 }
-/* line 149, ../../sass/partials/_idris.scss */
-body.idris #muziek .album .cover .title {
-  font-size: 20px;
+/* line 156, ../../sass/partials/_idris.scss */
+body.idris #muziek .album .tracks {
+  float: right;
 }
-/* line 157, ../../sass/partials/_idris.scss */
+/* line 159, ../../sass/partials/_idris.scss */
+body.idris #muziek .album ul {
+  list-style-type: none;
+}
+/* line 162, ../../sass/partials/_idris.scss */
+body.idris #muziek .album div.bestel {
+  background-color: #380404;
+  margin-top: 10px;
+  margin-right: 200px;
+  text-align: center;
+}
+/* line 167, ../../sass/partials/_idris.scss */
+body.idris #muziek .album div.bestel a {
+  color: lightgrey;
+}
+/* line 170, ../../sass/partials/_idris.scss */
+body.idris #muziek .album div.bestel a:hover {
+  color: #00cc00;
+}
+/* line 178, ../../sass/partials/_idris.scss */
 body.idris #fotos .thumb {
   float: left;
   margin: 6px;
 }
-/* line 163, ../../sass/partials/_idris.scss */
+/* line 184, ../../sass/partials/_idris.scss */
 body.idris #videos {
   width: 50%;
   margin: auto;
 }
-/* line 166, ../../sass/partials/_idris.scss */
+/* line 187, ../../sass/partials/_idris.scss */
 body.idris #videos div.section {
   margin-bottom: 20px;
 }
-/* line 172, ../../sass/partials/_idris.scss */
+/* line 193, ../../sass/partials/_idris.scss */
 body.idris #agenda table {
   margin-bottom: 3em;
 }
-/* line 178, ../../sass/partials/_idris.scss */
+/* line 199, ../../sass/partials/_idris.scss */
 body.idris #contact ul, body.idris #agenda-old ul, body.idris #pers ul {
   margin-bottom: 2em;
 }
-/* line 179, ../../sass/partials/_idris.scss */
+/* line 200, ../../sass/partials/_idris.scss */
 body.idris #contact ul li, body.idris #agenda-old ul li, body.idris #pers ul li {
   display: block;
 }
-/* line 186, ../../sass/partials/_idris.scss */
+/* line 207, ../../sass/partials/_idris.scss */
 body.idris #pers {
   width: 90%;
   margin-left: auto;
 }
-/* line 189, ../../sass/partials/_idris.scss */
+/* line 210, ../../sass/partials/_idris.scss */
 body.idris #pers div.section {
   clear: left;
 }
-/* line 193, ../../sass/partials/_idris.scss */
+/* line 214, ../../sass/partials/_idris.scss */
 body.idris #pers div.package {
   margin-right: 30px;
   margin-bottom: 20px;
 }
-/* line 198, ../../sass/partials/_idris.scss */
+/* line 219, ../../sass/partials/_idris.scss */
 body.idris #pers img {
   margin-top: 20px;
   margin-right: 20px;

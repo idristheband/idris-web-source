@@ -2,41 +2,50 @@
 layout: default
 banner: muziek
 ---
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="../js/soundcloud.player.api.js"></script>
-<script type="text/javascript" src="../js/sc-player.js"></script>
 
 #muziek
-
 
   %h1 Discografie
 
   .album
+    .title (untitled)
     .cover
-      .title (unnamed)
       %div
-        %img{:src => 'images/cd_unnamed.jpg'}
-      2010, Silvox Studio
+        %img{:src => '(untitled)/(untitled).jpg'}
+      %div 2010, Silvox Studio
+      .bestel
+        %a{:href=>'bestel'}Bestel de CD
     .tracks
-      %ol
+      %ol.graphic
         %li Sticks and Stones
-        %li Wings
-        %li Crystal Ball
-        %li Lynn
+        %li 
+          %a.sm2_link{:href=>'(untitled)/wings.mp3'}Wings
+        %li
+          %a.sm2_link{:href=>'(untitled)/crystal ball.mp3'}Crystal Ball
+        %li 
+          %a.sm2_link{:href=>'(untitled)/lynn.mp3'}Lynn
         %li Rush
         %li Ancient Groove
-        %li Hafnarfjordur
-        %li Beautiful Day
+        %li 
+          %a.sm2_link{:href=>'(untitled)/hafnarfjordur.mp3'}Hafnarfjordur
+        %li 
+          %a.sm2_link{:href=>'(untitled)/beautiful day.mp3'}Beautiful Day
         %li Senses
         %li Leisure For Didge
         %li Here to Stay
+        %li
+          %a.sm2_link{:href=>'(untitled)/crystal ball reprise.mp3'}
+            Crystal Ball (reprise)
 
   .album
+    .title Unforgotten
     .cover
-      .title Unforgotten
-      %img{:src => 'images/cd_unforgotten.jpg'}
+      %img{:src => 'unforgotten/unforgotten.jpg'}
+      %div 2007, FUAIME Studio
+      .bestel
+        %a{:href=>'bestel'}Bestel de CD
     .tracks
-      %ol
+      %ol.graphic
         %li White Lady
         %li Saughy Rigg Farm
         %li Dancing on the Wind
@@ -44,35 +53,52 @@ banner: muziek
         %li Transparent Borders
         %li Happy Swing
         %li The Gold
-        %li Unforgotten
+        %li 
+          %a.sm2_link{:href=>'unforgotten/unforgotten.mp3'} Unforgotten
         %li Moment in Time
         %li Dreaming
-        %li Glenashdale Falls
+        %li.last Glenashdale Falls
 
   .album
+    .title Meltemi
     .cover
-      .title Meltimi
-      %img{:src => 'images/cd_meltemi.jpg'}
+      %img{:src => 'meltemi/meltemi.jpg'}
+      .bestel
+        %a{:href=>'bestel'}Bestel de CD
     .tracks
-      %ol
-        %li Aurora Borealis
-        %li Didgecobeat
-        %li Meltemi
-        %li Spirits Bay
-        %li Never Look Back
-        %li Hallways
-        %li Stardance
-        %li It's Okay
-        %li Highway of Life
-        %li Didgecobeat (etno-groove remix)
+      %ol.graphic
+        %li
+          Aurora Borealis
+        %li
+          Didgecobeat
+        %li
+          %a.sm2_link{:href=>'meltemi/meltemi.mp3'}Meltemi
+        %li
+          %a.sm2_link{:href=>'meltemi/spirits.mp3'}Spirits Bay
+        %li
+          Never look back
+        %li
+          Hallways
+        %li
+          Star Dance
+        %li
+          %a.sm2_link{:href=>'meltemi/itsokay.mp3'}It's Okay
+        %li
+          Highway of Life
+        %li 
+          Didgecobeat (ethno-groove remix)
 
+  
   .album
+    .title Driven
     .cover
-      .title Driven
-      %img{:src => 'images/cd_driven.jpg'}
+      -# %img{:src => 'driven/driven.jpg'}
     .tracks
-      %ol
-        %li Expectations II
-        %li The Fields
-        %li Driven
+      %ol.graphic
+        %li
+          %a.sm2_link{:href=>"driven/expectations.mp3"} Expectations
+        %li
+          %a.sm2_link{:href=>"driven/fields.mp3"} Fields
+        %li
+          %a.sm2_link{:href=>"driven/driven.mp3"} Driven
 

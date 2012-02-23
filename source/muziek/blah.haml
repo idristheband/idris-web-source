@@ -1,59 +1,51 @@
 ---
-layout: default
+layout: sm2
 banner: muziek
 ---
 
 #muziek
-  %h1 Blah
-
-  <object height="300" width="300"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F589703&amp;auto_play=false&amp;player_type=artwork&amp;color=9d1c20"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="300" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F589703&amp;auto_play=false&amp;player_type=artwork&amp;color=9d1c20" type="application/x-shockwave-flash" width="300"></embed> </object>  
-
-  %h1 Driven
-
-  .album
-    .cover
-      .title Drivem
-    .tracks
-      <iframe width="50%" height="600" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F1451859&show_artwork=false"></iframe>
-
-  %h1 Test
-  
-  <object height="81" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F805447&amp;show_comments=true&amp;auto_play=false&amp;color=ff7700"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F805447&amp;show_comments=true&amp;auto_play=false&amp;color=ff7700" type="application/x-shockwave-flash" width="100%"></embed> </object>   <span><a href="http://soundcloud.com/crookedvultures/new-fang">New Fang</a> by <a href="http://soundcloud.com/crookedvultures">crookedvultures</a></span>
-
-  <iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F805447&amp;auto_play=false&amp;show_artwork=false&amp;color=ff7700"></iframe>
-
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F101860&show_artwork=true"></iframe>
-
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F101860&amp;auto_play=false&amp;show_artwork=true&amp;color=150505"></iframe>
 
   %h1 Discografie
 
   .album
+    .title (untitled)
     .cover
-      .title (unnamed)
       %div
-        %img{:src => 'images/cd_unnamed.jpg'}
-      2010, Silvox Studio
+        %img{:src => '(untitled)/(untitled).jpg'}
+      %div 2010<br/>Silvox Studio
+      .bestel
+        %a{:href=>'bestel'}Bestel de CD
     .tracks
-      %ol
+      %ol.graphic
         %li Sticks and Stones
-        %li Wings
-        %li Crystal Ball
-        %li Lynn
+        %li 
+          %a.sm2_link{:href=>'(untitled)/wings.mp3'}Wings
+        %li
+          %a.sm2_link{:href=>'(untitled)/crystal ball.mp3'}Crystal Ball
+        %li 
+          %a.sm2_link{:href=>'(untitled)/lynn.mp3'}Lynn
         %li Rush
         %li Ancient Groove
-        %li Hafnarfjordur
-        %li Beautiful Day
+        %li 
+          %a.sm2_link{:href=>'(untitled)/hafnarfjordur.mp3'}Hafnarfjordur
+        %li 
+          %a.sm2_link{:href=>'(untitled)/beautiful day.mp3'}Beautiful Day
         %li Senses
         %li Leisure For Didge
         %li Here to Stay
+        %li
+          %a.sm2_link{:href=>'(untitled)/crystal ball reprise.mp3'}
+            Crystal Ball (reprise)
 
   .album
+    .title Unforgotten
     .cover
-      .title Unforgotten
-      %img{:src => 'images/cd_unforgotten.jpg'}
+      %img{:src => 'unforgotten/unforgotten.jpg'}
+      %div 2007<br/>FUAIME Studio
+      .bestel
+        %a{:href=>'bestel'}Bestel de CD
     .tracks
-      %ol
+      %ol.graphic
         %li White Lady
         %li Saughy Rigg Farm
         %li Dancing on the Wind
@@ -61,35 +53,52 @@ banner: muziek
         %li Transparent Borders
         %li Happy Swing
         %li The Gold
-        %li Unforgotten
+        %li 
+          %a.sm2_link{:href=>'unforgotten/unforgotten.mp3'} Unforgotten
         %li Moment in Time
         %li Dreaming
-        %li Glenashdale Falls
+        %li.last Glenashdale Falls
 
   .album
+    .title Meltemi
     .cover
-      .title Meltimi
-      %img{:src => 'images/cd_meltemi.jpg'}
+      %img{:src => 'meltemi/meltemi.jpg'}
+      .bestel
+        %a{:href=>'bestel'}Bestel de CD
     .tracks
-      %ol
-        %li Aurora Borealis
-        %li Didgecobeat
-        %li Meltemi
-        %li Spirits Bay
-        %li Never Look Back
-        %li Hallways
-        %li Stardance
-        %li It's Okay
-        %li Highway of Life
-        %li Didgecobeat (etno-groove remix)
+      %ol.graphic
+        %li
+          Aurora Borealis
+        %li
+          Didgecobeat
+        %li
+          %a.sm2_link{:href=>'meltemi/meltemi.mp3'}Meltemi
+        %li
+          %a.sm2_link{:href=>'meltemi/spirits.mp3'}Spirits Bay
+        %li
+          Never look back
+        %li
+          Hallways
+        %li
+          Star Dance
+        %li
+          %a.sm2_link{:href=>'meltemi/itsokay.mp3'}It's Okay
+        %li
+          Highway of Life
+        %li 
+          Didgecobeat (ethno-groove remix)
 
+  
   .album
+    .title Driven
     .cover
-      .title Driven
-      %img{:src => 'images/cd_driven.jpg'}
+      -# %img{:src => 'driven/driven.jpg'}
     .tracks
-      %ol
-        %li Expectations II
-        %li The Fields
-        %li Driven
+      %ol.graphic
+        %li
+          %a.sm2_link{:href=>"driven/expectations.mp3"} Expectations
+        %li
+          %a.sm2_link{:href=>"driven/fields.mp3"} Fields
+        %li
+          %a.sm2_link{:href=>"driven/driven.mp3"} Driven
 
