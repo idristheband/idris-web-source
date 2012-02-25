@@ -1,4 +1,7 @@
 /public/
 /.sass-cache
 /source/_libs
+/source/css/screen.css
+/source/css/print.css
+/source/css/ie.css
 *.mp3
