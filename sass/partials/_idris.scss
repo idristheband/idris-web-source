@@ -194,6 +194,28 @@ body.idris {
             margin-bottom: 3em;
         }
     }
+
+    #gastenboek {
+        width: 60%;
+        margin: auto;
+        .comment {
+            .header {
+                font-size: 200%;
+            }
+            .content {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .footer {
+                font-size: 90%;
+                color: grey;
+            }
+        }
+        hr {
+            margin-top: 10px;
+            
+        }
+    }
   
     #contact, #agenda-old, #pers {
         ul {

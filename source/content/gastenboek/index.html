@@ -1,0 +1,34 @@
+---
+layout: default
+banner: gastenboek
+---
+
+<div id="gastenboek">
+  <a class='text'>Schrijf hier in ons gastenboek</a>
+</div>
+
+<script type="text/javascript">
+
+ function getComment(node){
+  return "<div class='comment'>"
+    + "<div class='header'>" + node.find('name').text() + "</div>"
+    + "<div class='content'>" + node.find('content').text() + "</div>"
+    + "<div class='footer'>" 
+      + node.find('from').text()
+      +" "
+      + node.find('date').text() 
+      + "</div>"
+    + "<hr/>"
+    + "</div>";
+ } 
+
+ $(document).ready(function() {
+   $.get("gastenboek.xml", function(data){
+     $(data).find("comment").each(function(){
+       $("#gastenboek").append(getComment($(this)));
+     });
+   });
+   $("#gastenboek a").addClass("text");
+ });
+</script>
+

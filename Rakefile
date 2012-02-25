@@ -57,3 +57,8 @@ task :deploy_local do
     cp_r f, '/home/endymion/www/idris'
   end
 end
+
+desc "Convert old gastenboek to XML"
+task :convert_gastenboek do
+  system(%{ruby convert_gastenboek.rb > source/content/gastenboek/gastenboek.xml})
+end
