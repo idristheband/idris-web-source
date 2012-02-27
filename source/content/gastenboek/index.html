@@ -2,17 +2,19 @@
 layout: default
 banner: gastenboek
 ---
-
 <div id="gastenboek">
-  <a class='text'>Schrijf hier in ons gastenboek</a>
+  <a class='button'
+     href='sign_page.html'>
+    Schrijf ook in ons gastenboek</a>
+  <hr>
 </div>
 
 <script type="text/javascript">
 
- function getComment(node){
+ function build(node){
   return "<div class='comment'>"
     + "<div class='header'>" + node.find('name').text() + "</div>"
-    + "<div class='content'>" + node.find('content').text() + "</div>"
+    + "<div class='content'>" + node.find('comment').text() + "</div>"
     + "<div class='footer'>" 
       + node.find('from').text()
       +" "
@@ -24,8 +26,8 @@ banner: gastenboek
 
  $(document).ready(function() {
    $.get("gastenboek.xml", function(data){
-     $(data).find("comment").each(function(){
-       $("#gastenboek").append(getComment($(this)));
+     $(data).find("entry").each(function(){
+       $("#gastenboek").append(build($(this)));
      });
    });
    $("#gastenboek a").addClass("text");

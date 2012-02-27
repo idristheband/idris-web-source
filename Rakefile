@@ -54,7 +54,7 @@ desc "Deploy to localhost"
 task :deploy_local do
   puts ">>> Deploying to local apache <<<"
   Dir["#{site}/*"].each do |f|
-    cp_r f, '/home/endymion/www/idris'
+    cp_r f, '/home/endymion/www/idris/html'
   end
 end
 
@@ -62,3 +62,4 @@ desc "Convert old gastenboek to XML"
 task :convert_gastenboek do
   system(%{ruby convert_gastenboek.rb > source/content/gastenboek/gastenboek.xml})
 end
+

@@ -1,0 +1,50 @@
+---
+layout: default
+banner: gastenboek
+---
+
+<script language="javascript" type="text/javascript" src="/js/datum.js"></script>
+:javascript
+  setTimeout(function(){
+  document.guestbook.DATETIME.value = pretty_datum(),
+  1000
+  });
+
+%form{:name=>'guestbook',
+      :method=>'POST',
+      :action=>'http://localhost/cgi-bin/idris_guestbook.pl'}
+
+  %input{:type=>"hidden",
+         :name=>"DATETIME",
+         :value=>"x"}
+
+  %label{:for=>'naam'}**Naam
+  %input#naam{:type=>'text',:name=>'YOURNAME'}
+  %br
+
+  %label{:for=>'email'}E-mail
+  %input#email{:type=>'text', :name=>'YOUREMAIL'}
+  %br
+
+  %label{:for=>'website'}Website (naam)
+  %input#website{:type=>'text', :name=>'HPTITLE'}
+  %br
+
+  %label{:for=>'websiteurl'}Website URL
+  %input#websiteurl{:type=>'text', :name=>'HPADDRESS'}
+  %br
+
+  %label{:for=>'woonplaats'}Woonplaats
+  %input#woonplaats{:type=>'text', :name=>'PLACE'}
+  %br
+
+  %label{:for=>'comments'}Reactie
+  %textarea#comments{:name=>'COMMENTS',
+                     :cols=>36, :rows=>5,
+                     :wrap=>'physical'}
+  %br
+
+  %label &nbsp;
+  %input{:type=>'submit', :value=>'Plaats bericht'}
+  
+  
