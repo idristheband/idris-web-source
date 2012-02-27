@@ -1,0 +1,103 @@
+---
+layout: default
+banner: muziek
+---
+<script language="javascript" type="text/javascript" src="/js/form_check.js"></script>
+<script language="javascript" type="text/javascript" src="/js/datum.js"></script>
+:javascript
+  setTimeout(function(){
+  document.bestelformulier.DATETIME.value = pretty_datum(),
+  1000
+  }
+
+#bestellen.form
+
+  %h1 Bestelformulier
+
+  %p
+    Vul dit formulier in om onze CD's te bestellen. Na verzenden van dit formulier ontvangt u informatie hoe u kunt betalen via overschrijving.
+
+  %p
+    Onze nieuwste CD kunt u ook bestellen via o.a.:
+    %a{:href=>'http://www.silvox.nl/',:target=>'_blank'}SILVOX
+    %a{:href=>'http://www.bol.com/nl/p/muziek/idris/1000004011450592/index.html',
+       :target=>'_blank'}bol.com
+    %a{:href=>'http://www.eci.nl/muziek/idris-idris-8715777002622', :target=>'_blank'}ECI
+    %a{:href=>'http://www.cosmox.be/muziek/idris-idris-8715777002622', :target=>'_blank'}COSMOX
+    %a{:href=>'http://www.freerecordshop.nl/music/idris-8715777002622', :target=>'_blank'}FreeRecordShop
+  
+  %form{:name=>'bestelformulier',
+        :method=>'POST',
+        :action=>'http://localhost/cgi-bin/html_bestelformulier.pl'}
+
+    %input{:type=>"hidden",
+           :name=>"xxxrequired",
+           :value=>"achternaam;adres;postcode;woonplaats;rekeningnr;email;telefoon"}
+
+    %input{:type=>"hidden",
+           :name=>"DATETIME"}
+    %div
+      %div 
+        IDRIS, 16 EUR/CD
+        %img{:src=>'/images/cd_idris.jpg', :width=>50}
+      %input{:type=>'number', :name=>'idris'}
+    %br
+
+    %div
+      %div
+        Unforgotten, 15 EUR/CD
+        %img{:src=>'/images/cd_unforgotten.jpg', :width=>50}
+      %input{:type=>'number', :name=>'unforgotten'}
+    %br
+
+    %div
+      %div
+        Meltemi, 15 EUR/CD
+        %img{:src=>'/images/cd_meltemi.jpg', :width=>50}
+      %input{:type=>'number', :name=>'meltemi'}
+    %br
+
+    %div
+      Verzendkosten: 2,50 EUR
+
+    %label{:for=>'voornaam'}Voornaam
+    %input#voornaam{:type=>'text',:name=>'initialen'}
+    %br
+
+    %label{:for=>'achternaam'}Achternaam
+    %input#achternaam{:type=>'text', :name=>'achternaam'}
+    %br
+
+    %label{:for=>'adres'}Adres
+    %input#adres{:type=>'text', :name=>'adres'}
+    %br
+
+    %label{:for=>'postcode'}Postcode
+    %input#postcode{:type=>'text', :name=>'postcode'}
+    %br
+
+    %label{:for=>'woonplaats'}Woonplaats
+    %input#woonplaats{:type=>'text', :name=>'woonplaats'}
+    %br
+
+    %label{:for=>'rekening'}Rekeningnummer
+    %input#rekening{:type=>'text', :name=>'rekeningnr'}
+    %br
+
+    %label{:for=>'email'}E-mail
+    %input#email{:type=>'text', :name=>'email'}
+    %br
+
+    %label{:for=>'telefoon'}Telefoonnummer
+    %input#telefoon{:type=>'text', :name=>'telefoon'}
+    %br
+
+    %label{:for=>'nieuwsbrief'}Nieuwsbrief
+    %input#nieuwsbrief{:type=>'checkbox', :name=>'nieuwsbrief'}
+    %br
+
+    %label &nbsp;
+    %input{:type=>'button', :value=>'plaats bestelling',
+           :name=>'submitbutton',
+           :onclick=>'javascript:checkSubmitForm(document.forms[0])'}
+
