@@ -34,18 +34,16 @@ body.idris {
         font-size: 20px;
     }
 
-    a, a.text {
+    a {
 	color: $idris-text;
-        text-decoration: none;
-    }
-    a.text:link {
         text-decoration: underline;
     }
-    a.text:visited {
+    a:link {
+    }
+    a:visited {
         color: $idris-text;
-        text-decoration: underline;
     }
-    a.text:hover {
+    a:hover {
 	color: $idris-green;
     }
 
@@ -113,6 +111,9 @@ body.idris {
         }
     }
 
+    #form_content {
+    }
+
 //-------------------------------------------------------------
 
     #home {
@@ -126,6 +127,8 @@ body.idris {
     
 
     #band {
+        width: 80%;
+        margin: auto;
         .section {
             clear : both;
         }
@@ -159,19 +162,10 @@ body.idris {
             ul {
                 list-style-type: none;
             }
-            div.bestel {
-                background-color: $idris-footer-bg;
-                margin-top: 10px;
-                margin-right: 200px;
-                text-align: center;
-                a {
-                    color: $idris-text;
-                }
-                a:hover {
-                    color: $idris-green;
-                }
-            }
         }
+    }
+
+    #bestellen {
     }
 
     #fotos {
@@ -217,7 +211,7 @@ body.idris {
         }
     }
   
-    #contact, #agenda-old, #pers {
+    #agenda-old, #pers {
         ul {
             li {
                 display: block;
@@ -226,9 +220,14 @@ body.idris {
         }
     }
 
+    #contact {
+        width: 60%;
+        margin: auto;
+    };
+
     #pers {
         width: 90%;
-        margin-left: auto;
+        margin: auto;
         div.section {
             clear: left;
         }
