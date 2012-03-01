@@ -35,6 +35,7 @@ def create_xml entries
           xml.from x.from
           xml.comment x.comment
           xml.date x.date
+          xml.website x.website
         }
       end
     }
@@ -49,6 +50,7 @@ class Entry
   def from ; select "woonplaats:" ; end
   def comment ; select "reactie:" ; end
   def date ; select "tijd:" ; end
+  def website ; select "website:" ; end
   def to_s
     name
   end
@@ -60,6 +62,7 @@ class Entry
       .drop(1)
       .take_while do |x| not x.downcase.start_with?("<b>") end
       .join
+      #.sub(/<br>$/, '')
   end
   def valid?
     not name.empty? and not comment.empty?

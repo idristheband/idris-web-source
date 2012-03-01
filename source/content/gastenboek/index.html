@@ -16,8 +16,8 @@ banner: gastenboek
     + "<div class='header'>" + node.find('name').text() + "</div>"
     + "<div class='content'>" + node.find('comment').text() + "</div>"
     + "<div class='footer'>" 
+      + node.find('website').text()
       + node.find('from').text()
-      +" "
       + node.find('date').text() 
       + "</div>"
     + "<hr/>"
